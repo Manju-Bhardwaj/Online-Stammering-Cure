@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body{
+    
+    margin: 0 !important;
+    margin-right: 0 !important;
+    overflow-x: hidden !important;
+   
+}
+
+.containers{
+  /* position: absolute; */
+  background : url("../images/bg3.png");
+    
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  /* backdrop-filter: blur(10px) !important; */
+  backdrop-filter {
+    -webkit-filter: brightness(52%) contrast(60%) invert(4%) !important; 
+    filter: brightness(52%) contrast(60%) invert(4%) !important;
+  } 
+    height: 100vh;
+    width: 100% ;
+    display: flex ;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+    /* padding: 5px; */
+   
+}
+
+.content{
+    /* width: 1200px; */
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction:column !important;
+    padding-left: 100px;
+
+}
+.content h3{
+    padding-top: 150px;
+    color: #050606;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.content p{
+    color: #3e4042;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+.content .btn{
+    width: 240px;
+    height: 45px;
+    color: #fff;
+    border-radius: 25px;
+    background: #4d72d0;
+    cursor: pointer;
+    border: 1px solid;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: .5s;
+   
+}
+.content .btn:hover{
+    background:transparent;
+
+}
+.image img{
+    margin-left: 50px;
+    margin-right: 30px;
+    width: 30vw;
+    height: 60vh;
+    /* clip-path: polygon(69% 8%, 35% 5%, 11% 10%, 1% 35%, 5% 77%, 34% 88%, 77% 86%, 95% 63%, 98% 37%, 94% 22%); */
+}
+.heading{
+  margin-top: -20px;
+}
+.rest{
+  /* background-color: #a2c2bb58 !important; */
+  background-color: #a9bcc35e !important;
+}
+.hh2{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.step{
+    height: 200px;
+    border:black 2px solid;
+    padding: 3px;
+    
+  }
+  .works{
+    display: flex;
+    gap: 15px;
+  }
+  
+  
+  .sample{
+    
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    background-color: #3232323b;
+    color: #002855;
+    padding: 2px;
+    margin-bottom: 8px;
+    
+    
+  }
+  .sample_videos{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap:5px;
+    margin-top: 10px;
+    padding: 20px;
+    }
+    .vds iframe{
+      width: 425px;
+      height:300px;
+      padding: 10px;
+    }
+  .rest{
+    background-color: #d7e3f492;
+  }
+  
+.bttns{
+  transition: all 0.25s ease-out;
+}
+.bttns:hover {
+  position: relative;
+  top: -3px;
+  box-shadow: -6px 14px 12px 2px rgba(90, 90, 90, .12);
+}
+.razorpay{
+  border-radius: 2px;
+  /* background-color: #002855; */
+}
+.card:hover{
+  box-shadow: -10px 18px 18px 10px rgba(44, 44, 44, 0.12);
+}
+.choices{
+ width: 100vw;
+  margin-bottom: 50px !important;
+
+}
+.c_pic{
+  height: 220px !important;
+}
+
+
+@media(max-width:768px) {
+  .content h3{
+    margin-top: -30px;
+  }
+  .content .btn{
+    margin: auto;
+  }
+  .containers{
+    height: 75vh;
+    display: flex;
+    flex-direction: column  !important;
+  }
+  .content h3{
+    padding-top: 50px;
+  }
+  
+  .works{
+      display: flex;
+      flex-direction: column !important;
+      gap: 50px;
+  }
+  
+  .sample{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+    background-color: #3232323b;
+    color: #002855;
+    padding: 2px;
+    margin-bottom: 8px;
+  }
+  .vds2{
+    display: none ;
+  }
+  .vds iframe{
+    width: 380px;
+    height:250px;
+    padding: 15px;
+  }
+  .c_pic{
+    height: 100px !important;
+    margin-top: 45px;
+    height: 100vh;
+  }
+  .image{
+    padding: 5px;
+  }
+  #more{
+    display: none;
+  }
+}
+@media(max-width:520px){
+  .image img{
+    margin-left: 30px;
+    
+    width: 150px;
+    height: 200px;
+  }
+  .vds2{
+    display: none ;
+  }
+}
