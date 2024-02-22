@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Stammering Cure</title>
     <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="stylesheet" href="./assets/nav.css">
+    <link rel="stylesheet" href="./assets/footer.css">
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -24,19 +26,34 @@
       crossorigin="anonymous"
     ></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $("#navigation").load("nav.html");
-        $("#footer").load("footer.html");
-      });
-    </script>
+    
     <link rel="shortcut icon" href="./images/bg3.png" type="image/x-icon">
 
   </head>
 
   <body>
-    <div id="navigation"></div>
-
+    <!-- <div id="navigation"></div> -->
+    <header>
+      <div class="navbar position-sticky" >
+        <div class="logo mb-2 "><a href="#"> Online Stammering Cure</a></div>
+        <ul class="links mt-2" >
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#sample videos">Sample Videos</a></li>
+          <li><a href="#Book">Book appointment</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+  
+      <div class="dropdown_menu ">
+        <li><a href="./index.html">Home</a></li>
+          <li><a href="#sample videos">Sample Videos</a></li>
+          <li><a href="#Book">Book appointment</a></li>
+          <li><a href="#Contact">Book</a></li>
+      </div>
+    </header>
     <div class="containers">
       
       <div class="content p-5">
@@ -47,7 +64,7 @@
           cupiditate molestias assumenda voluptas quia. Possimus rerum corrupti
           impedit in, ut nobis. Tempore!
         </p>
-        <button class="btn">Book Appointment</button>
+        <button class="btn fs-5">Book Appointment</button>
       </div>
       <div class="image">
         <img class="t-image" src="./images/6311829.jpg" />
@@ -192,8 +209,8 @@
                   <a
                     href="https://pages.razorpay.com/checkup"
                     target="blank"
-                    class="btn bttns btn-dark p-2 ms-5"
-                    >Book Now</a
+                    class="btn bttns btn-dark p-2"
+                    ><i class="fa-regular fa-calendar-check me-1"></i>Book Now</a
                   >
                 </div>
               </div>
@@ -221,7 +238,7 @@
                   <a
                     href="https://wa.me/918890601641?text=Hello%20I%20would%20like%20more%20information%20"
                     target="blank"
-                    class="btn bttns btn-green text-white p-2 ms-4"
+                    class="btn bttns btn-success text-white p-2 ms-4"
                     ><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a
                   >
                  
@@ -231,7 +248,73 @@
           </div>
         </div>
       </div>
-      <div id="footer" class="mt-5"></div>
+      <!-- <div id="footer" class="mt-5"></div> -->
+      <div class="footer1 pt-3 pb-3 container-fluid w-100" style="overflow-x: hidden; margin-top: -6px;">
+        <div class="row footer mt-auto ">
+
+            <div class="col-md-4 col-sm-12 mx-auto p-4 border-right">
+
+                <div class="footer-img">
+                    
+                    <h3 class="fw-bold mt-4">ONLINE STAMMERING CURE</h3>
+                </div>
+                <div class="location d-flex flex-row mt-4">
+                    <div class="location-icon"><i class="fa-solid fa-location-dot me-3"></i></div>
+                    <div class="location">abc
+                    </div>
+                </div>
+
+                <div class="contact mt-4">
+                    <i class="fa-solid fa-phone me-3"></i>
+                    <a href="tel:+91-0000000000" class="text-decoration-none text-dark">+91-0000000000</a>
+
+                </div>
+
+                <div class="email mt-4">
+                    <i class="fa-solid fa-envelope me-3"></i>
+                    <a href="mailto: abc@gmail.com" class="text-decoration-none text-dark">abc@gmail.com</a>
+                </div>
+
+            </div>
+            <!-- quick links-->
+            <div class="col-md-4 col-sm-12 p-4 border-right">
+                <h3 class="fw-bold mt-4 quick-links" style="margin-left: 5.1rem;">Treatments</h3>
+                <ul class="quick-links" style="margin-left: 3.5rem;">
+                    <li><a href="#">abc</a></li>
+                    <li><a href="#">abc</a></li>
+                    <li><a href="#">abc</a></li>
+                    <li><a href="#">abc</a></li>
+                    
+                </ul>
+
+            </div>
+            <!-- newsletter -->
+            <div class="col-md-4 col-sm-12 p-4 border-right ">
+                <div class="page mt-2">
+                    <h3 class="fw-bold mb-4">Let's Connect</h3>
+                    
+                </div>
+                <div class="socials mt-3">
+                    <ul class="social d-flex flex-wrap  ms-auto ">
+                        <li><a class="mb-2" target="_blank" href=""><i class="fab fa-facebook"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a class="mb-2" target="_blank" href=""><i class="fab fa-twitter"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a class="mb-2" target="_blank" href=""><i
+                                    class=" fab fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a class="mb-2" target="_blank" href=""><i
+                                    class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a class="mb-2" target="_blank" href=""><i class="fab fa-instagram"
+                                    aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+        <hr class="footer-hr" >
+        
+    </div>
     </div>
 
     <!-- bootstrap script -->
@@ -247,6 +330,19 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen= dropDownMenu.classList.contains('open')
+        toggleBtnIcon.classList= isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+  
+    </script>
     <script>
        function moreFunction() {
             var dots = document.getElementById("dots");

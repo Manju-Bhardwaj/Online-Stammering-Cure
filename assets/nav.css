@@ -49,9 +49,9 @@ header{
   text-decoration: none;
   color: #002855;
   font-size: 2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: 'DM Serif Display', serif;
-  font-weight: bolder;
+  /* font-weight: bolder; */
 }
 .navbar .links{
   display: flex;
@@ -117,11 +117,17 @@ header{
   .dropdown_menu{
     display: block;
   }
+  .header .logo{
+    font-size: 30px ;
+  }
 }
 
 @media(max-width: 576px){
 .dropdown_menu{
   left: 2rem;
   width: unset;
+}
+.navbar .logo a{
+  font-size: 25px !important;
 }
 }
