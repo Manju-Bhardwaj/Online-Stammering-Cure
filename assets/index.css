@@ -9,13 +9,13 @@ body{
 
 .containers{
   /* position: absolute; */
-  background : url("../images/bg3.png");
+  background : url("../images/lp-bg1.png");
     
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   
-  /* backdrop-filter: blur(10px) !important; */
+  
   backdrop-filter {
     -webkit-filter: brightness(52%) contrast(60%) invert(4%) !important; 
     filter: brightness(52%) contrast(60%) invert(4%) !important;
@@ -27,22 +27,21 @@ body{
     align-items: center;
     justify-content: space-between;
    
-    
-    /* padding: 5px; */
-   
 }
 
 .content{
-    /* width: 1200px; */
+    width: 800px;
     height: 100%;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-direction:column !important;
-    padding-left: 100px;
+    padding-left: 150px;
+    
+    text-align: left !important;
 
 }
 .content h3{
-    padding-top: 150px;
+    padding-top: 100px;
     color: #050606;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -51,7 +50,9 @@ body{
     color: #3e4042;
     line-height: 20px;
     letter-spacing: 1px;
-    padding-top: 20px;
+    padding-top: 10px;
+    text-align: left !important;
+    padding-right: 50px;
 }
 .content .btn{
     width: 240px;
@@ -73,15 +74,15 @@ body{
 .image img{
     margin-left: 50px;
     margin-right: 30px;
-    width: 30vw;
+    width: 35vw;
     height: 60vh;
-    /* clip-path: polygon(69% 8%, 35% 5%, 11% 10%, 1% 35%, 5% 77%, 34% 88%, 77% 86%, 95% 63%, 98% 37%, 94% 22%); */
+ 
 }
 .heading{
   margin-top: -20px;
 }
 .rest{
-  /* background-color: #a2c2bb58 !important; */
+
   background-color: #a9bcc35e !important;
 }
 .hh2{
@@ -156,20 +157,30 @@ body{
 
 
 @media(max-width:768px) {
+.content{
+  width: 100%;
+}
   .content h3{
-    margin-top: -30px;
+    margin-top: -50px;
+    padding-top: 50px;
   }
   .content .btn{
-    margin: auto;
+    margin-top: 2px;
+    font-size: 15px !important;
+    width: 160px;
+    height: 40px;
+  }
+  
+  .image{
+    display: none;
   }
   .containers{
     height: 75vh;
     display: flex;
     flex-direction: column  !important;
+   background-image: url("../images/m-bg1.png");
   }
-  .content h3{
-    padding-top: 50px;
-  }
+ 
   
   .works{
       display: flex;
@@ -211,8 +222,8 @@ body{
   .image img{
     margin-left: 30px;
     
-    width: 150px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
   }
   .vds2{
     display: none ;
