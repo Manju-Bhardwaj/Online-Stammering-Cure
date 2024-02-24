@@ -9,7 +9,7 @@ body{
 
 .containers{
   /* position: absolute; */
-  background : url("../images/lp-bg1.png");
+  background : url("../images/bi8.png");
     
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@ body{
     -webkit-filter: brightness(52%) contrast(60%) invert(4%) !important; 
     filter: brightness(52%) contrast(60%) invert(4%) !important;
   } 
-    height: 100vh;
+    height: 92vh;
     width: 100% ;
     display: flex ;
     flex-direction: row ;
@@ -30,18 +30,20 @@ body{
 }
 
 .content{
+  
     width: 800px;
     height: 100%;
     /* margin: auto; */
     display: flex;
     flex-direction:column !important;
-    padding-left: 150px;
+    /* justify-content: center; */
+    /* padding-left: 200px; */
     
     text-align: left !important;
 
 }
-.content h3{
-    padding-top: 100px;
+.content h2{
+    padding-top: 60px;
     color: #050606;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
@@ -160,6 +162,9 @@ body{
 @media(max-width:768px) {
 .content{
   width: 100%;
+}
+.content {
+  margin-left: 30px;
 }
   .content h3{
     margin-top: -50px;
